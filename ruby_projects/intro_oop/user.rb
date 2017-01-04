@@ -1,5 +1,3 @@
-# class user, here is some documentation
-# more stuff coing here
 class User
   attr_accessor :name, :email
 
@@ -24,6 +22,19 @@ end
 #    puts "Name changed to #{@name}"
 #  end
 =end
+
+class Buyer < User
+
+end
+
+class Seller < User
+
+end
+
+class Admin < User
+
+end
+
 
 # creates object and prints it
 user1 = User.new('Miguel', 'miguel@gmail.com')
