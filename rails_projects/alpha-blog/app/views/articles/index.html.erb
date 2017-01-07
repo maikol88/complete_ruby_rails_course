@@ -1,11 +1,23 @@
 <h1> This is index, all articles are here</h1>
 
+<%= link_to "Create new article", new_article_path %>
+
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Description</th>
+  </tr>
+
 <% @article.each do |each_article| %>
-    <div>
-      <br>
-      <p><%= each_article.title %></p>
-      <p><%= each_article.description %></p>
-      <%= link_to 'Show', article_path(each_article) %>
-      <br>
-    </div>
+ <tr>
+   <td><%= each_article.title %></td>
+   <td><%= each_article.description %></td>
+   <td><%= link_to 'Show', article_path(each_article) %></td>
+   <td><%= link_to 'Edit', edit_article_path(each_article) %></td>
+   <td><%= link_to 'Destroy', article_path(each_article), method: :delete, data: {confirm: "Are you sure"} %></td>
+
+ </tr>
 <% end %>
+</table>
+
+<%= link_to "Back to articles listing", articles_path %>
