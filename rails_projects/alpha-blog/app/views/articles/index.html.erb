@@ -1,0 +1,11 @@
+<h1> This is index, all articles are here</h1>
+
+<% @article.each do |each_article| %>
+    <div>
+      <br>
+      <p><%= each_article.title %></p>
+      <p><%= each_article.description %></p>
+      <%= link_to 'Show', article_path(each_article) %>
+      <br>
+    </div>
+<% end %>
