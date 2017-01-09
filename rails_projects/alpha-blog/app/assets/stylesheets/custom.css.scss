@@ -1,0 +1,76 @@
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+#logo{
+  float: left;
+  font-size: 1.7em;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  font-weight: bold;
+}
+
+#logo:hover{
+  text-decoration: none;
+}
+
+.center{
+  text-align: center;
+}
+
+.jumbotron{
+  background-image: asset-url('12.jpg');
+  background-size: cover;
+  height: 600px;
+  padding-top: 10px;
+}
+
+.jumbotron h1{
+  color: #fff;
+  text-align: center;
+  margin-botom: 30px;
+  letter-spacing: -1px;
+  font-weight: bold;
+}
+
+.btn-xlarge {
+  font-size: 1.7em;
+}
+
+.rails-logo-small {
+  background-image: asset-url('rails-logo.png');
+  width: 70px;
+  height: auto;
+  padding-left: 8px;
+  display: inline;
+  float: left;
+}
+
+
+footer {
+  margin-top: 45px;
+  padding-top: 5px;
+  padding-left: 50px;
+  padding-right: 50px;
+  border-top: 1px solid #eaeaea;
+  color: #777;
+}
+
+footer a:hover {
+  color: #222;
+}
+
+footer small {
+  padding-top: 10px;
+  float: left;
+}
+
+footer ul{
+  float: right;
+  list-style: none;
+}
+
+footer ul li{
+  float: left;
+  margin-left: 15px;
+}
